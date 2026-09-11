@@ -55,7 +55,7 @@ The merged dataset was normalized to one class, `tank`. Original source material
 
 | Source label / 来源 | Images / 图片 | Train | Val | Test | Boxes / 框 | Local review / 本地审查 |
 | --- | ---: | ---: | ---: | ---: | ---: | --- |
-| Simuletic UAV Tank | 164 | 131 | 16 | 17 | 716 | License copy not present locally |
+| Simuletic UAV Tank | 164 | 131 | 16 | 17 | 716 | Contributor confirmed free sample; non-commercial release |
 | MCA Tanks | 1,235 | 1,074 | 120 | 41 | 18,700 | Download record says Public Domain; verify source page |
 | Military Vehicle Detection, tank subset | 1,130 | 880 | 151 | 99 | 1,973 | Download record says MIT; verify source page |
 | **Merged total** | **2,529** | **2,085** | **287** | **157** | **21,389** | |
@@ -81,6 +81,7 @@ Source links and the exact version/permission review are listed in [DATASET_NOTI
 
 ## Non-commercial research notice / 非商业研究声明
 
-This preview is for personal learning, academic research, and non-commercial experimentation. Do not use it for harmful, unlawful, privacy-invasive, or safety-critical decisions. Users are responsible for dataset permissions, attribution, downstream use, and compliance with applicable law and platform rules.
+This release is for personal learning, academic research, and non-commercial experimentation. Do not use it for harmful, unlawful, privacy-invasive, or safety-critical decisions. Users are responsible for dataset permissions, attribution, downstream use, and compliance with applicable law and platform rules.
 
-本预览用于个人学习、学术研究和非商业实验。不得将其用于有害、违法、侵犯隐私或安全关键型决策。使用者应自行负责数据集授权、署名、下游用途以及适用法律和平台规则的合规性。
+本发布用于个人学习、学术研究和非商业实验。不得将其用于有害、违法、侵犯隐私或安全关键型决策。使用者应自行负责数据集授权、署名、下游用途以及适用法律和平台规则的合规性。
+
