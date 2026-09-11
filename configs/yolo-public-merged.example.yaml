@@ -1,0 +1,23 @@
+# Sanitized example only. Keep actual paths and weights private.
+
+task: detect
+model: YOLO11n_CHECKPOINT_PRIVATE_PATH
+data: MERGED_TANK_DATASET_YAML_PRIVATE_PATH
+epochs: 100
+imgsz: 960
+batch: 4
+workers: 1
+device: 0
+single_class: true
+class_names:
+  0: tank
+eval_conf: 0.001
+sample_conf: 0.25
+seed: 42
+save: true
+plots: true
+
+# Expected runtime boundary:
+# - AMD ROCm/HIP single GPU
+# - Do not auto-download weights
+# - Keep manifests, logs, outputs, and checkpoints outside GitHub
