@@ -2,6 +2,16 @@
 
 # 公开坦克目标检测 YOLO 模型
 
+This repository is a bilingual, research-oriented release for a single-class YOLO object-detection model trained from three publicly available tank datasets. It contains the model card, reproducibility notes, dataset attribution, sanitized configuration, and a privacy-sanitized weight file.
+
+这是一个中英双语、面向研究的发布仓库，用于介绍一个使用三个公开坦克数据集训练的单类别 YOLO 目标检测模型。仓库包含模型卡片、复现说明、数据集署名、脱敏配置和已清理隐私信息的权重文件。
+
+## Release status / 发布状态
+
+The training run is complete. The released weight uses the locally confirmed free sample portion of the Simuletic source, together with the other two public sources. The release is limited to non-commercial research and learning; see [WEIGHTS_NOTICE.md](WEIGHTS_NOTICE.md).
+
+训练已经完成。本次发布使用你确认的 Simuletic 免费样本部分，以及另外两个公开来源。发布范围限定为非商业研究和学习用途，详见 [WEIGHTS_NOTICE.md](WEIGHTS_NOTICE.md)。
+
 ## Model summary / 模型摘要
 
 | Item / 项目 | Value / 数值 |
@@ -16,6 +26,8 @@
 | Device / 设备 | AMD Radeon RX 9070 XT, 16GB |
 | Backend / 后端 | ROCm/HIP, single GPU |
 | Run status / 运行状态 | Complete / 已完成 |
+| Released weight / 发布权重 | `weights/best.pt` |
+| Weight SHA-256 / 权重哈希 | `81DD8A702F5AAE323B5712A182A8F650B26CEBD778527CABE39EB0AB203564A2` |
 
 ## Test result / 测试结果
 
@@ -50,3 +62,25 @@ The merged dataset was normalized to one class, `tank`. Original source material
 
 Source links and the exact version/permission review are listed in [DATASET_NOTICES.md](DATASET_NOTICES.md).
 
+## Included / 公开内容
+
+- [Model card](docs/MODEL_CARD.md)
+- [Reproduction notes](docs/REPRODUCTION.md)
+- [Dataset notices and release gate](DATASET_NOTICES.md)
+- [Sanitized training configuration](configs/yolo-public-merged.example.yaml)
+- [Weight notice and attribution](WEIGHTS_NOTICE.md)
+- [Released weight](weights/best.pt)
+- [License for original notes](LICENSE)
+
+## Excluded / 不公开内容
+
+- Checkpoints other than the released `weights/best.pt`, optimizer states, and training caches
+- Original images, annotation files, manifests, and evaluation images
+- Private logs, local paths, account information, and machine identifiers
+- Any claim that the model is suitable for operational, safety-critical, or regulated use
+
+## Non-commercial research notice / 非商业研究声明
+
+This preview is for personal learning, academic research, and non-commercial experimentation. Do not use it for harmful, unlawful, privacy-invasive, or safety-critical decisions. Users are responsible for dataset permissions, attribution, downstream use, and compliance with applicable law and platform rules.
+
+本预览用于个人学习、学术研究和非商业实验。不得将其用于有害、违法、侵犯隐私或安全关键型决策。使用者应自行负责数据集授权、署名、下游用途以及适用法律和平台规则的合规性。
