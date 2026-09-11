@@ -2,16 +2,6 @@
 
 # 公开坦克目标检测 YOLO 模型
 
-This repository is a bilingual, research-oriented release preview for a single-class YOLO object-detection model trained from three publicly available tank datasets. It contains the model card, reproducibility notes, dataset attribution, and sanitized configuration only.
-
-这是一个中英双语、面向研究的发布预览，用于介绍一个使用三个公开坦克数据集训练的单类别 YOLO 目标检测模型。预览只包含模型卡片、复现说明、数据集署名和脱敏配置。
-
-## Release status / 发布状态
-
-The training run is complete, but the model weight file is **not included in this preview**. One source copy does not carry a local license file, and its public licensing information needs to be matched to the exact downloaded version before redistributing derived weights. This is a release gate, not a training failure.
-
-训练已经完成，但本预览**不包含模型权重文件**。其中一个来源的本地副本没有附带许可证文件，而其公开页面的许可信息需要与实际下载版本逐一对应，确认后才能分发基于它训练的权重。这是发布合规门槛，不是训练失败。
-
 ## Model summary / 模型摘要
 
 | Item / 项目 | Value / 数值 |
@@ -60,23 +50,3 @@ The merged dataset was normalized to one class, `tank`. Original source material
 
 Source links and the exact version/permission review are listed in [DATASET_NOTICES.md](DATASET_NOTICES.md).
 
-## Included / 公开内容
-
-- [Model card](docs/MODEL_CARD.md)
-- [Reproduction notes](docs/REPRODUCTION.md)
-- [Dataset notices and release gate](DATASET_NOTICES.md)
-- [Sanitized training configuration](configs/yolo-public-merged.example.yaml)
-- [License for original notes](LICENSE)
-
-## Excluded / 不公开内容
-
-- Model weights, checkpoints, optimizer states, and training caches
-- Original images, annotation files, manifests, and evaluation images
-- Private logs, local paths, account information, and machine identifiers
-- Any claim that the model is suitable for operational, safety-critical, or regulated use
-
-## Non-commercial research notice / 非商业研究声明
-
-This preview is for personal learning, academic research, and non-commercial experimentation. Do not use it for harmful, unlawful, privacy-invasive, or safety-critical decisions. Users are responsible for dataset permissions, attribution, downstream use, and compliance with applicable law and platform rules.
-
-本预览用于个人学习、学术研究和非商业实验。不得将其用于有害、违法、侵犯隐私或安全关键型决策。使用者应自行负责数据集授权、署名、下游用途以及适用法律和平台规则的合规性。
