@@ -1,8 +1,8 @@
 # Reproduction notes / 复现说明
 
-This preview intentionally does not contain the datasets or model weights. Reproduction requires obtaining the exact source versions through their official pages and using only data whose terms permit your intended use.
+This repository does not contain the source datasets. It includes one released weight for non-commercial research and learning. Reproduction requires obtaining the exact source versions through their official pages and using only data whose terms permit your intended use.
 
-本预览刻意不包含数据集和模型权重。复现时必须从官方页面获取精确来源版本，并且只能使用许可条款允许你目标用途的数据。
+本仓库不包含原始数据集，但提供一个用于非商业研究和学习的发布权重。复现时必须从官方页面获取精确来源版本，并且只能使用许可条款允许你目标用途的数据。
 
 ## Environment / 环境
 
@@ -43,11 +43,11 @@ Use the values in [`yolo-public-merged.example.yaml`](../configs/yolo-public-mer
 - Confirm the test split is fixed before comparing runs.
 - Record Precision, Recall, mAP@0.5, mAP@0.5:0.95, and inference timing.
 - Inspect false positives and false negatives, not only the aggregate scores.
-- Do not upload the weight until the dataset notice release gate is complete.
+- Verify the released weight hash against the README before use.
 
 - 确认训练正常退出。
 - 私下确认 `best.pt` 和 `last.pt` 均已写出。
 - 比较不同训练时固定测试集不变。
 - 记录 Precision、Recall、mAP@0.5、mAP@0.5:0.95 和推理时间。
 - 不只看汇总指标，还要检查误报和漏检。
-- 数据集声明审查完成前，不上传权重。
+- 使用前请将发布权重哈希与 README 中的记录进行核对。
