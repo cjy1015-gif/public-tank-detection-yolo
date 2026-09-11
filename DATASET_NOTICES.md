@@ -9,14 +9,14 @@ This file records the release review status. A dataset being publicly downloadab
 ### 1. Simuletic UAV Tank
 
 - Local training copy: 164 images after normalization.
-- The local copy did not include a license file or complete attribution notice.
-- A public dataset card with a similar name currently displays `cc-by-nc-4.0`; a separate public page describes a sample under a different access/licensing arrangement.
-- Until the exact downloaded version and its terms are confirmed, derived weights remain withheld.
+- The contributor confirms that the local copy used here was the approximately 140 MB free sample portion.
+- The release is limited to non-commercial research and learning, with attribution to Simuletic.
+- A public dataset card currently displays `cc-by-nc-4.0`, while a separate public page describes the free sample under CC BY 4.0. Users must recheck the terms when using a different source version.
 
 - 本地训练副本：统一处理后 164 张图片。
-- 本地副本没有附带许可证文件或完整署名说明。
-- 当前公开的同名数据卡显示 `cc-by-nc-4.0`，另一个公开页面对样本和完整数据的访问/许可安排有所不同。
-- 在确认实际下载版本及其条款前，不公开基于它训练的权重。
+- 贡献者确认，本次使用的本地副本是约 140 MB 的免费样本部分。
+- 本次发布限定为非商业研究和学习，并保留对 Simuletic 的署名。
+- 当前公开的数据卡显示 `cc-by-nc-4.0`，另一个公开页面将免费样本描述为 CC BY 4.0。使用其他来源版本时必须重新核对条款。
 
 Candidate source pages / 待核对来源：
 
@@ -51,7 +51,7 @@ Before adding a weight file to a public release:
 2. Save the license text, attribution requirements, and access terms privately and in the repository notices.
 3. Check whether the least permissive source limits commercial use, redistribution, or model derivatives.
 4. Confirm that the base YOLO implementation and any pretrained checkpoint allow the intended redistribution.
-5. Publish the weight only if the combined terms and attribution obligations are clear.
+5. For a different source version or commercial use, recheck the combined terms before use.
 
 在把权重文件加入公开发布前：
 
@@ -59,4 +59,4 @@ Before adding a weight file to a public release:
 2. 保存许可证文本、署名要求和访问条款，并写入仓库声明。
 3. 检查限制最严格的来源是否限制商业使用、再分发或模型衍生品。
 4. 确认 YOLO 基础实现和预训练检查点允许目标发布方式。
-5. 只有组合条款和署名义务清晰后，才公开权重。
+5. 如果使用其他来源版本或涉及商业用途，应在使用前重新核对组合条款。
