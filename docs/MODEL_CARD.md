@@ -56,10 +56,10 @@ The held-out split is relatively small and source-domain composition can affect 
 - Source-domain differences may cause false positives or missed detections.
 - The test split was checked for format errors, but complete source-clip separation was not independently recorded in the public package.
 - No claim is made about real-time performance on other hardware.
-- The weight is withheld until the exact dataset-license chain is confirmed.
+- The released weight is limited to non-commercial research and learning under the source-attribution notice.
 
 - 单一 `tank` 类别不区分车型，也不判断敌我属性。
 - 数据来源差异可能导致误报或漏检。
 - 测试集通过格式预检，但公开包没有独立记录完整来源片段隔离证据。
 - 不对其他硬件上的实时性能作保证。
-- 权重将在数据集许可证链条确认后再决定是否公开。
+- 发布权重仅限非商业研究和学习用途，并受来源署名声明约束。
